@@ -1,2 +1,5 @@
+/*.png
+/bin
 /build
+/geckodriver.log
 /venv

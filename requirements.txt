@@ -1,2 +1,3 @@
 libsass
 pre-commit
+selenium

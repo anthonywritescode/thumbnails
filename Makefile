@@ -1,4 +1,4 @@
-all: build/style.css
+all: bin/geckodriver build/style.css
 
 venv: requirements.txt
 	rm -rf venv
@@ -6,11 +6,14 @@ venv: requirements.txt
 	venv/bin/pip install -rrequirements.txt
 	venv/bin/pre-commit install -f --install-hooks
 
-build:
+bin build:
 	mkdir build
+
+bin/geckodriver: Makefile
+	./get-geckodriver.py v0.15.0
 
 build/%.css: assets/scss/%.scss build venv
 	venv/bin/sassc -t compressed $< $@
 
 clean:
-	rm -rf venv build
+	rm -rf bin build venv
