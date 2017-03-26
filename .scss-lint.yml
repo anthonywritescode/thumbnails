@@ -1,0 +1,9 @@
+linters:
+    ColorVariable:
+        enabled: false
+    Indentation:
+        width: 4
+    PropertySortOrder:
+        enabled: false
+    SingleLinePerSelector:
+        enabled: false

@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    font-family: verdana, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    border-width: 1em;
+    border-style: solid;
+
+    > * {
+        position: absolute;
+    }
+}
+
+.channel-icon {
+    top: 2em;
+    right: 2em;
+    width: 20%;
+}
+
+.logo {
+    left: 2em;
+    bottom: 2em;
+    width: 30%;
+}
+
+.title {
+    left: 10em;
+    top: 2em;
+
+    span {
+        font-size: 14em;
+        font-weight: bold;
+    }
+}
+
+.subtitle {
+    left: 37.5em;
+    top: 27.5em;
+
+    span {
+        display: inline-block;
+        text-align: center;
+        font-size: 7.5em;
+    }
+}
+
+.episode {
+    bottom: 2em;
+    right: 2em;
+
+    span {
+        font-size: 12.5em;
+    }
+}
+
+.dark {
+    background: #000;
+    color: #ddd;
+}
+
+.light {
+    background: #eee;
+    color: #333;
+}
