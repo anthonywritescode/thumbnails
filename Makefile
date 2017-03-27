@@ -11,6 +11,7 @@ bin build:
 
 bin/geckodriver: Makefile
 	./get-geckodriver.py v0.15.0
+	touch $@
 
 build/%.css: assets/scss/%.scss build venv
 	venv/bin/sassc -t compressed $< $@
