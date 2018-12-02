@@ -14,7 +14,7 @@ bin/geckodriver: Makefile
 	touch $@
 
 build/%.css: assets/scss/%.scss build venv
-	venv/bin/sassc -t compressed $< $@
+	venv/bin/pysassc -t compressed $< $@
 
 clean:
 	rm -rf bin build venv

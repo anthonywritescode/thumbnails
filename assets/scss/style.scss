@@ -76,3 +76,13 @@ body {
     background: #eee;
     color: #333;
 }
+
+.aoc {
+    border-color: #0c0;
+
+    .title span {
+        font-size: 16vh;
+        color: #0c0;
+        text-shadow: 0 0 2px #0c0, 0 0 10px #0c0;
+    }
+}
