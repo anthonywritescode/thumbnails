@@ -82,6 +82,11 @@ body {
     color: #333;
 }
 
+.banner {
+    background: #2d0922;
+    color: #fff;
+}
+
 .aoc {
     border-color: #0c0;
 
@@ -98,5 +103,35 @@ body {
         font-size: 16vh;
         color: #0c0;
         text-shadow: 0 0 2px #0c0, 0 0 10px #0c0;
+    }
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.social {
+    display: inline-block;
+    font-size: 6vh;
+
+    td {
+        vertical-align: middle;
+    }
+
+    .spacer {
+        padding: 0 4vh;
+    }
+}
+
+.offline {
+    font-family: 'Ubuntu Mono';
+    font-size: 16vh;
+    right: 8vh;
+    top: 8vh;
+
+    span {
+        background-color: #c00;
+        padding: 1vh 1vh 0;
     }
 }

@@ -21,7 +21,7 @@ def webdriver(*args, **kwargs):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('html_file')
-    parser.add_argument('--size', choices=('1080p', '720p'), default='720p')
+    parser.add_argument('--size', choices=SIZES, default='720p')
     args = parser.parse_args()
 
     # Put geckodriver on the PATH
