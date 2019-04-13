@@ -6,7 +6,11 @@ import os.path
 from selenium.webdriver.firefox.webdriver import WebDriver
 
 
-SIZES = {'1080p': (1920, 1080), '720p': (1280, 720)}
+SIZES = {
+    '1080p': (1920, 1080),
+    '720p': (1280, 720),
+    'panel':  (320, 100),
+}
 
 
 @contextlib.contextmanager

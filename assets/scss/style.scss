@@ -87,6 +87,24 @@ body {
     color: #fff;
 }
 
+.panel {
+    background: #2d0922;
+    color: #fff;
+    border: 0;
+
+    > img {
+        left: 12px;
+        top: 16px;
+        height: 64px;
+    }
+
+    > div {
+        left: 80px;
+        font-size: 24px;
+        top: 36px;
+    }
+}
+
 .aoc {
     border-color: #0c0;
 
