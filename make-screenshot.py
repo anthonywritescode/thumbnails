@@ -49,7 +49,7 @@ def main():
 
         # Switch to our new window
         handle, = set(driver.window_handles) - {driver.current_window_handle}
-        driver.switch_to_window(handle)
+        driver.switch_to.window(handle)
 
         driver.save_screenshot(screenshot)
 
