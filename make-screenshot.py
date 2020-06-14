@@ -2,6 +2,7 @@
 import argparse
 import contextlib
 import os.path
+import time
 
 from selenium.webdriver.firefox.webdriver import WebDriver
 
@@ -51,6 +52,7 @@ def main():
         handle, = set(driver.window_handles) - {driver.current_window_handle}
         driver.switch_to.window(handle)
 
+        time.sleep(2)
         driver.save_screenshot(screenshot)
 
 
