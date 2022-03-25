@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 import argparse
 import contextlib
 import os.path
@@ -45,7 +47,7 @@ def main():
             f'window.open('
             f'    "file://{filepath}", "test",'
             f'    "innerWidth={width},innerHeight={height}"'
-            f');\n'
+            f');\n',
         )
 
         # Switch to our new window
