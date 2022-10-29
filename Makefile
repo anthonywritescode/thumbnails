@@ -10,7 +10,7 @@ bin build:
 	mkdir build
 
 bin/geckodriver: Makefile
-	./get-geckodriver.py v0.27.0
+	./get-geckodriver.py v0.32.0
 	touch $@
 
 build/%.css: assets/scss/%.scss build venv
